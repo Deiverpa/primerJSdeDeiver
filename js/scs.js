@@ -33,10 +33,21 @@ usd.compra();
 const cartera = [bitcoin]
 console.log(cartera)
 cartera.push(usd)
-console.log(cartera.length);
 
 for (const cantidad of cartera) {
     console.log(cantidad);
-    alert("usted tiene " + cantidad.cantidad);
+    console.log("usted tiene " + cantidad.cantidad );
+    let venta = prompt("¿quieres vender desde tu cartera?")
+    if(venta == "si"){ 
+        const ventaWallet = prompt("¿qué moneda quieres vender?")
+        if(ventaWallet == "USD"){ 
+            const ventaUSD = prompt("¿Cuántos USD quieres vender?")
+        } else if(ventaWallet == "BTC") {
+            const ventaBTC = prompt("¿Cuántos BTC quieres vender?")
+        }        
+    } else {
+        console.log("nada")
+    }
 }
 
+// const ventaWallet = (){

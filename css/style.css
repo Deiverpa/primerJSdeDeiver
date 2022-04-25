@@ -4,6 +4,15 @@ body {
   background-color: #2F2F2F;
 }
 
+.navbar-main {
+  color: #FFCB74;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFCB74;
+}
+
 h1 {
   color: #FFCB74;
 }
