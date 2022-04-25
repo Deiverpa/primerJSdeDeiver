@@ -15,3 +15,21 @@ alert("USD a BTC =" + " " +(cryptoExchange(tasaDeCambioBTCUSD, cantidadUSD,)));
     } else {
         (prompt("recargue la pagina y digite nuevamente la moneda"))
     }
+    compra(){
+        console.log("Tienes: " + this.cantidad + " " + this.nombre );
+    }
+}
+const bitcoin = new asset("BITCOIN", prompt("¿cuántos BTC deseas comprar?") );
+const usd = new asset("UNITED STATES DOLAR", prompt("¿cuántos USD deseas comprar?"))
+bitcoin.compra();
+usd.compra();
+
+const cartera = [bitcoin]
+console.log(cartera)
+cartera.push(usd)
+console.log(cartera.length);
+
+for (const cantidad of cartera) {
+    console.log(cantidad);
+    alert("usted tiene " + cantidad.cantidad);
+}
