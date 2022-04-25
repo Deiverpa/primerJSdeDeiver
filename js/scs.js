@@ -39,3 +39,4 @@ for (const cantidad of cartera) {
     console.log(cantidad);
     alert("usted tiene " + cantidad.cantidad);
 }
+
