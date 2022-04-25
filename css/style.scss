@@ -1,3 +1,12 @@
+/*colores principales*/ 
+$colorTexto:#f6f6f6;
+$colorBackground: #2F2F2F;
+$colorPrincipal: #FFCB74;
+$colorSecundario: #111111;
+/*final colores*/ 
+body{
+    background-color: #2F2F2F;
+}
 h1{
-    color: aqua;
+    color: $colorPrincipal;
 }
