@@ -41,13 +41,18 @@ for (const cantidad of cartera) {
     if(venta == "si"){ 
         const ventaWallet = prompt("¿qué moneda quieres vender?")
         if(ventaWallet == "USD"){ 
-            const ventaUSD = prompt("¿Cuántos USD quieres vender?")
+            let ventaUSD = prompt("¿Cuántos USD quieres vender?")
+            alert ("has vendido " + ventaUSD + " unidades USD")
         } else if(ventaWallet == "BTC") {
-            const ventaBTC = prompt("¿Cuántos BTC quieres vender?")
+            let ventaBTC = prompt("¿Cuántos BTC quieres vender?")
+            alert ("has vendido " + ventaBTC + " unidades BTC")
         }        
     } else {
         console.log("nada")
     }
+    while (ventaUSD > usd) {
+        alert("error")
+    }
 }
 
-// const ventaWallet = (){
+
