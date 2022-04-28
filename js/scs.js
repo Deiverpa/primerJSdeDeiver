@@ -99,11 +99,6 @@ sellBTC.onclick = () =>{
         }
 }
 
-// let permision = prompt("are you at least 18 years old?")
-// if(permision == "yes"){
-//     let approvedP = document.createElement(input);
-//     document.body.article.appendChild(approvedP);
-// }
 let permision = prompt("are you at least 18 years old?")
 if(permision == "yes"){
 let parrafo = document.createElement("p");
