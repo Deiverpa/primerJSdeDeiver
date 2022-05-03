@@ -5,18 +5,59 @@ $colorPrincipal: #FFCB74;
 $colorSecundario: #111111;
 /*final colores*/ 
 body{
-    background-color: #2F2F2F;
+    background-color: $colorBackground;
 }
-.navbar-main{
-    color: #FFCB74;
-    text-decoration: none;
+
+header{
+    margin-bottom: 1.5rem;
 }
-a:hover{
-    color: #FFCB74;
+
+.principalSection{
+    background-image: url(../assets/images/wave.svg);
+    background-repeat: no-repeat;
+    height: 45rem;
 }
-h1{
+
+.navbar-link{
     color: $colorPrincipal;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar-link2{
+    color: $colorTexto;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar-link3{
+    color: $colorTexto;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar-link:hover{
+    color: $colorPrincipal;
+}
+.navbar-link2:hover{
+    color: $colorPrincipal;
+}
+.navbar-link3:hover{
+    color: $colorPrincipal;
+}
+
+
+h1{
+    color: $colorTexto;
 }
 h2{
     color: $colorPrincipal;
+}
+
+.btnPrincipal{
+    color:$colorSecundario;
+    background-color: $colorPrincipal;
 }

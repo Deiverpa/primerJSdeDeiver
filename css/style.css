@@ -4,20 +4,59 @@ body {
   background-color: #2F2F2F;
 }
 
-.navbar-main {
-  color: #FFCB74;
-  text-decoration: none;
+header {
+  margin-bottom: 1.5rem;
 }
 
-a:hover {
+.principalSection {
+  background-image: url(../assets/images/wave.svg);
+  background-repeat: no-repeat;
+  height: 45rem;
+}
+
+.navbar-link {
+  color: #FFCB74;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar-link2 {
+  color: #f6f6f6;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar-link3 {
+  color: #f6f6f6;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar-link:hover {
+  color: #FFCB74;
+}
+
+.navbar-link2:hover {
+  color: #FFCB74;
+}
+
+.navbar-link3:hover {
   color: #FFCB74;
 }
 
 h1 {
-  color: #FFCB74;
+  color: #f6f6f6;
 }
 
 h2 {
   color: #FFCB74;
+}
+
+.btnPrincipal {
+  color: #111111;
+  background-color: #FFCB74;
 }
 /*# sourceMappingURL=style.css.map */
