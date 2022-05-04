@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <!-- <link rel="manifest" href="./manifest.json"> -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -40,7 +40,7 @@
                 <a class="navbar-link2 navbar-main" href="#">Market</a>
                 <a class="navbar-link2 navbar-main" href="#">Exchange</a>
                 <a class="navbar-link2 navbar-main" href="#">Wallet</a>
-                <div><a class="navbar-link3 navbar-main" href="#">Sign in/up</a></div>
+                <div><a class="navbar-link3 navbar-main" id="sing-in-up" href="#">Sign in/up</a></div>
             </div>
         </div>
         </div>
@@ -56,7 +56,6 @@
             <h2>
                 Get Started
             </h2>
-            <section>
                 <div>
                     <button type="button" class="btn btnPrincipal" id="buyButtonUSD">Buy USD</button>
                     <button type="button" class="btn btnPrincipal" id="buyButtonBTC">Buy BTC</button>
@@ -67,10 +66,8 @@
                     <button type="button" class="btn btnPrincipal" id="sellButtonUSD">Sell USD</button>
                     <button type="button" class="btn btnPrincipal" id="sellButtonBTC">Sell BTC</button>
                 </div>
-            </section>
-            <section>
-            </section>
         </div>
+        <div class="container walletSection"></div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/scs.js"></script>
