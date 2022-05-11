@@ -11,7 +11,11 @@ header {
 .principalSection {
   background-image: url(../assets/images/wave.svg);
   background-repeat: no-repeat;
-  height: 45rem;
+  height: 20rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 1rem;
 }
 
 .navbar-link {

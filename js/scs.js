@@ -1,8 +1,10 @@
-// const singIn = document.getElementById("sing-in-up")
-// singIn.onclick = () =>{
-//     let userID = prompt("Enter your username")
-//     userID(); 
-// }
+let usernameID = "";
+const signIn = document.getElementById("sign-in-up")
+signIn.onclick = () =>{
+usernameID = prompt("Enter your username")
+console.log("your username is " + usernameID)
+sessionStorage.setItem("saveusername",usernameID)
+}
 
 let buyUSD = document.getElementById("buyButtonUSD")
 buyUSD.onclick = () =>{
@@ -13,7 +15,7 @@ buyUSD.onclick = () =>{
         else {
             alert ("you bought " + compraUSD + " USD Units");
             let parrafo = document.createElement("p");
-            parrafo.innerHTML = "<strong><h2>Your Wallet is </h2>" + compraUSD + " USD</strong>"; 
+            parrafo.innerHTML = "<strong><h2>Your Wallet has been increased on </h2>" + compraUSD + " USD</strong>"; 
             document.body.append(parrafo);           
         }       
 }
@@ -27,7 +29,7 @@ buyBTC.onclick = () =>{
         else {
             alert ("you bought " + compraBTC + " BTC Units");
             let parrafo = document.createElement("p");
-            parrafo.innerHTML = "<strong><h2>Your Wallet is </h2>" + compraBTC + " BTC</strong>"; 
+            parrafo.innerHTML = "<strong><h2>Your Wallet has been increased on </h2>" + compraBTC + " BTC</strong>"; 
             document.body.append(parrafo);           
         }       
 }
@@ -51,12 +53,7 @@ sellBTC.onclick = () =>{
     let ventaBTC = prompt("How many BTC do you want to sell?")
     if(ventaBTC <=0){
         alert ("please sell more than 0 units")
-        }// }else if (compraBTC = null){
-        //     alert ("please enter a number")
-        // }
-        // else if (compraBTC = NaN){
-        //     alert ("please enter a number")
-        // }
+        }
         else {
             alert ("you sold " + ventaBTC + " BTC Units");
             let parrafo = document.createElement("p");
