@@ -34,7 +34,7 @@ buyUSD.onclick = () =>{ if(usernameID == ""){
             let parrafo = document.createElement("p");
             parrafo.innerHTML = "<strong><h2>Your Wallet has been increased on </h2>" + compraUSD + " USD</strong>"; 
             document.body.append(parrafo);
-            const currencyUSD = new currency ("USD", "1", compraUSD);
+            const currencyUSD = new currency ("USD", 1, compraUSD);
             console.log(currencyUSD)           
         }
     }       
