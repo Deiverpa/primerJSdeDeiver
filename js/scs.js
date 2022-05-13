@@ -1,14 +1,26 @@
+class currency {
+    constructor( name, value, quantity ){
+        this.name = name;
+        this.valueUSD = valueUSD;
+        this.quantity = quantity;
+    }
+}
 
-let usernameID = "";
+let usernameID = ""; 
 const signIn = document.getElementById("sign-in-up")
 signIn.onclick = () =>{
 usernameID = prompt("Enter your username")
 document.getElementById("welcomeSection")
 welcomeSection.innerText = "Welcome " + usernameID
 sessionStorage.setItem("saveusername",usernameID)
-// document.getElementById("sign-in-up")
-// welcomeSection.innerText = "sign-out" + usernameID
 }
+
+// new currency = document.getElementById("sign-in-up")
+// currency.onclick = () =>{
+// const currencyUSD = new currency ("USD", 1, 5000)
+// }
+
+// console.log(newuser);
 
 let buyUSD = document.getElementById("buyButtonUSD")
 buyUSD.onclick = () =>{ if(usernameID == ""){
@@ -21,10 +33,14 @@ buyUSD.onclick = () =>{ if(usernameID == ""){
             alert ("you bought " + compraUSD + " USD Units");
             let parrafo = document.createElement("p");
             parrafo.innerHTML = "<strong><h2>Your Wallet has been increased on </h2>" + compraUSD + " USD</strong>"; 
-            document.body.append(parrafo);           
+            document.body.append(parrafo);
+            const currencyUSD = new currency ("USD", "1", compraUSD);
+            console.log(currencyUSD)           
         }
     }       
 }
+
+
 
 let buyBTC = document.getElementById("buyButtonBTC")
 buyBTC.onclick = () =>{ if(usernameID == ""){
