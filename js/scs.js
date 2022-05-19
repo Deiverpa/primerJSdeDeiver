@@ -40,7 +40,7 @@ function purchasesUSD() {
     alert ("you bought " + purchaseUSD + " USD Units");
     let parrafo = document.createElement("p");
     parrafo.innerHTML = "<strong><h2>Your Wallet has been increased on </h2>" + purchaseUSD + " USD</strong>";
-    sessionStorage.setItem("history",purchaseUSD.quantity , purchaseUSD.name ) 
+    sessionStorage.setItem("history",purchaseUSD.quantity) 
     document.body.append(parrafo);
     console.log(currencyInicial)
     console.log(purchaseUSD)
