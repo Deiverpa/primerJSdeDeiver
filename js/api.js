@@ -11,7 +11,7 @@ const mostrarData = (data)=>{
     console.log(data)
     let body = ''
     for (let i=0; i < 100; i++) {
-        body += `<tr><td>${data[i].symbol}</td><td>${data[i].price}</td></tr>`
+        body += `<tr><td>${data[i].symbol}</td><td>${Number.parseFloat(data[i].price).toFixed(3)}</td></tr>`
     }
     document.getElementById('tdata').innerHTML = body
 }    
