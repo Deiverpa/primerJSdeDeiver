@@ -67,3 +67,20 @@ h2{
 strong{
     color: $colorPrincipal;
 }
+
+.tableMarket{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 3rem;
+    box-shadow: 0 0 25px;
+    border-radius: 0%;
+    thead tr{
+        background-color:$colorPrincipal;
+        color: $colorSecundario;
+        text-align: center;
+    }
+    tbody{
+        color: $colorTexto;
+        text-align: center;
+    }
+}

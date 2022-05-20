@@ -67,4 +67,24 @@ h2 {
 strong {
   color: #FFCB74;
 }
+
+.tableMarket {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 3rem;
+  -webkit-box-shadow: 0 0 25px;
+          box-shadow: 0 0 25px;
+  border-radius: 0%;
+}
+
+.tableMarket thead tr {
+  background-color: #FFCB74;
+  color: #111111;
+  text-align: center;
+}
+
+.tableMarket tbody {
+  color: #f6f6f6;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
