@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "izitoast": "^1.4.0",
+    "toastify-js": "^1.11.2"
+  }
+}

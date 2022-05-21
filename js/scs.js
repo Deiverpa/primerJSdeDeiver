@@ -33,19 +33,19 @@ startTrading.onclick = () =>{
     nuevousuario();
 }
 
+let history = ""
 let purchaseUSD = new currency
 function purchasesUSD() {
     let purchaseUSD = new currency("USD", 1 , Number(prompt("how many USD do you want to buy")));
     walletUser.unshift(purchaseUSD);
-    alert ("you bought " + purchaseUSD + " USD Units");
     let parrafo = document.createElement("p");
-    parrafo.innerHTML = "<strong><h2>Your Wallet has been increased on </h2>" + purchaseUSD + " USD</strong>";
-    sessionStorage.setItem("history",purchaseUSD.quantity) 
+    parrafo.innerHTML = "<strong><h2>Your Wallet has been increased on </h2>" + purchaseUSD.quantity + " USD</strong>";
+    let history = sessionStorage.setItem("purchasehistory",purchaseUSD.quantity) 
     document.body.append(parrafo);
-    console.log(currencyInicial)
     console.log(purchaseUSD)
     console.log(walletUser)
 }
+console.log(history);
 
 let buyUSD = document.getElementById("buyButtonUSD")
 buyUSD.onclick = () =>{usernameID == "" ? alert ("please sign in") : purchasesUSD();     
@@ -62,4 +62,6 @@ function sellesUSD() {
 let sellUSD = document.getElementById("sellButtonUSD")
 sellUSD.onclick = () =>{ sellesUSD();     
 }
+
+
 
