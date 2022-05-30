@@ -40,7 +40,7 @@ function purchasesUSD() {
     walletUser.unshift(purchaseUSD);
     let parrafo = document.createElement("p");
     let history = sessionStorage.setItem("purchasehistory",purchaseUSD.name) 
-    parrafo.innerHTML = "<h2>Your Wallet has been increased on </h2>" + purchaseUSD.quantity + sessionStorage.getItem(purchaseUSD.name);
+    parrafo.innerHTML = "<h2>Your Wallet has been increased on </h2>" + purchaseUSD.quantity + sessionStorage.getItem("purchasehistory",purchaseUSD.name);
     document.body.append(parrafo);
     console.log(purchaseUSD)
     console.log(walletUser)
