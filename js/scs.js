@@ -1,3 +1,12 @@
+function loadingPage(){
+    Swal.fire('Please Log In with the "Sign in"')
+}
+window.onload = loadingPage;
+
+// let alerta = document.getElementById("prueba")
+// alerta.onclick = () =>{ Swal.fire('Any fool can use a computer')  
+// }
+
 /* It creates a OBJET called currency. */
 class currency {
     constructor( name, value, quantity ){
@@ -15,17 +24,25 @@ const signIn = document.getElementById("sign-in-up")
 signIn.onclick = () =>{
 usernameID = prompt("Enter your username")
 document.getElementById("welcomeSection")
-welcomeSection.innerText = "Start trading " + usernameID
+welcomeSection.innerText = "Start trading " + usernameID;
 sessionStorage.setItem("saveusername",usernameID)
+Swal.fire('Please Start "WALLET"')
 }
+
+
 
 /* Creating a new currency object with the name USD, value 1 and quantity 5000. */
 let currencyInicial = new currency
 function nuevousuario() {
     let currencyInicial = new currency("USD", 1, 5000);
     walletUser.push(currencyInicial);
-    console.log(currencyInicial)
-    console.log(walletUser)
+    console.log(currencyInicial);
+    console.log(walletUser);
+    Swal.fire(
+        'CryptoDev',
+        'Your Wallet is Started',
+        'success'
+        )
 }
 
 const startTrading = document.getElementById("getStarted")
@@ -45,6 +62,7 @@ function purchasesUSD() {
     console.log(purchaseUSD)
     console.log(walletUser)
 }
+
 // console.log(history);
 
 let buyUSD = document.getElementById("buyButtonUSD")
@@ -63,5 +81,4 @@ let sellUSD = document.getElementById("sellButtonUSD")
 sellUSD.onclick = () =>{ sellesUSD();     
 }
 
-
-
+let library = 0
