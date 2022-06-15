@@ -77,7 +77,7 @@ function sellesUSD() {
     console.log(sellsUSD)
     console.log(walletUser)
     let parrafo = document.createElement("p");
-    parrafo.innerHTML = "<h2>Your Wallet has been Reduced on </h2>" + sellsUSD.quantity + sessionStorage.getItem("purchasehistory",sellsUSD.name);
+    parrafo.innerHTML = "<h2>Your Wallet has been reduced on </h2>" + sellsUSD.quantity + sessionStorage.getItem("purchasehistory",sellsUSD.name);
     document.body.append(parrafo);
 }
 
@@ -85,4 +85,35 @@ let sellUSD = document.getElementById("sellButtonUSD")
 sellUSD.onclick = () =>{ sellesUSD();     
 }
 
-let library = 0
+// BTC BTC BTC
+
+let purchaseBTC = new currency
+function purchasesBTC() {
+    let purchaseBTC = new currency("BTC", 1 , Number(prompt("how many BTC do you want to buy")));
+    walletUser.unshift(purchaseBTC);
+    let parrafo = document.createElement("p");
+    let history = sessionStorage.setItem("purchasehistory",purchaseBTC.name) 
+    parrafo.innerHTML = "<h2>Your Wallet has been increased on </h2>" + purchaseBTC.quantity + sessionStorage.getItem("purchasehistory",purchaseBTC.name);
+    document.body.append(parrafo);
+    console.log(purchaseBTC)
+    console.log(walletUser)
+}
+// console.log(history);
+let buyBTC = document.getElementById("buyButtonBTC")
+buyBTC.onclick = () =>{usernameID == "" ? alert ("please sign in") : purchasesBTC();     
+}
+
+let sellsBTC = new currency
+function sellesBTC() {
+    let sellsBTC = new currency("BTC", 1 , Number(prompt("how many BTC do you want to sell")));
+    walletUser.shift(sellsBTC);
+    console.log(sellsBTC)
+    console.log(walletUser)
+    let parrafo = document.createElement("p");
+    parrafo.innerHTML = "<h2>Your Wallet has been reduced on </h2>" + sellsBTC.quantity + sessionStorage.getItem("purchasehistory",sellsBTC.name);
+    document.body.append(parrafo);
+}
+
+let sellBTC = document.getElementById("sellButtonBTC")
+sellBTC.onclick = () =>{ sellesBTC();     
+}
