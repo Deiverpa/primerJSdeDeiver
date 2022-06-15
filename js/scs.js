@@ -1,5 +1,8 @@
 function loadingPage(){
-    Swal.fire('Please Log In with the "Sign in"')
+    Swal.fire({
+        title: 'Please Sign In',
+        color: '#FFCB74',
+    })
 }
 window.onload = loadingPage;
 
@@ -62,9 +65,7 @@ function purchasesUSD() {
     console.log(purchaseUSD)
     console.log(walletUser)
 }
-
 // console.log(history);
-
 let buyUSD = document.getElementById("buyButtonUSD")
 buyUSD.onclick = () =>{usernameID == "" ? alert ("please sign in") : purchasesUSD();     
 }
@@ -75,6 +76,9 @@ function sellesUSD() {
     walletUser.shift(sellsUSD);
     console.log(sellsUSD)
     console.log(walletUser)
+    let parrafo = document.createElement("p");
+    parrafo.innerHTML = "<h2>Your Wallet has been Reduced on </h2>" + sellsUSD.quantity + sessionStorage.getItem("purchasehistory",sellsUSD.name);
+    document.body.append(parrafo);
 }
 
 let sellUSD = document.getElementById("sellButtonUSD")
